@@ -1,0 +1,13 @@
+Feature: Login to the mobile app
+
+  Scenario Outline: Test login functionality with various credentials
+    Given I launch the app
+    When I login with "<username>" and "<password>"
+    Then I should see the "<result>"
+
+    Examples:
+      | username           | password  | result          |
+      | bob@example.com    | 10203040  | dashboard page  |
+      | 1@2.com            | f-o-o     | error message   |
+      | alice@example.com  | 10203040  | error message   |
+      |                    |           | error message   |

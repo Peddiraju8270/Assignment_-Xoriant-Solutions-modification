@@ -1,0 +1,18 @@
+├── features
+│   ├── login.feature
+│   └── step-definitions
+│       └── loginSteps.js
+├── pageobjects
+│   └── LoginPage.js
+├── data
+│   └── loginUsers.js
+├── config
+│   └── wdio.shared.conf.js
+├── helpers
+│   └── pathHelper.js
+├── reports
+│   └── allure-results
+├── wdio.android.conf.js
+├── wdio.ios.conf.js
+├── package.json
+└── README.md
